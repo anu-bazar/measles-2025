@@ -1,17 +1,35 @@
-# MEASLES
-Last updated: JULY 2025
+# MEASLES  
+**Last updated:** July 2025
 
-Data sources: 
-https://immunizationdata.who.int/global/wiise-detail-page/measles-reported-cases-and-incidence
-Data Description: 1980-2024 only per country, deleted metadata sheets.
-Saved to measles-allcountry.xlsx
+---
 
-https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format 
-Data Description: 'Time', 'Location', 'LocTypeName', 'PopTotal' columns taken if 'Variant' field was Zero Migration or Medium, AND 'LocTypeName' was 'Country/Area' within Time of 1980-2024.
-Used throughout the Normalized Code and 00 population.py
+### Data Sources & Descriptions
 
-https://immunizationdata.who.int/global/wiise-detail-page/measles-vaccination-coverage?GROUP=Countries&ANTIGEN=MCV1&YEAR=&CODE= 
-Data Description: Official Coverage, All Countries, 1st dose, Second Dose, from 1980-2024
-Cleaned with R and Python; analyzed with Python.
+1. **Measles Reported Cases and Incidence**  
+   URL: https://immunizationdata.who.int/global/wiise-detail-page/measles-reported-cases-and-incidence  
+   - Data range: 1980–2024 (per country)  
+   - Metadata sheets removed  
+   - Saved as: measles-allcountry.xlsx
 
+2. **Population Data (UN World Population Prospects)**  
+   URL: https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format  
+   - Selected columns: Time, Location, LocTypeName, PopTotal  
+   - Filters applied:  
+     - Variant = Zero Migration or Medium  
+     - LocTypeName = Country/Area  
+     - Time: 1980–2024  
+   - Used throughout the Normalized Code and 00_population.py
 
+3. **Measles Vaccination Coverage**  
+   URL: https://immunizationdata.who.int/global/wiise-detail-page/measles-vaccination-coverage?GROUP=Countries&ANTIGEN=MCV1&YEAR=&CODE=  
+   - Official coverage data, all countries  
+   - Includes: 1st dose and 2nd dose, 1980–2024  
+   - Data cleaning: R and Python  
+   - Analysis: Python
+
+---
+
+### Related Article
+
+Read the corresponding article here:  
+https://medium.com/@anubazarragchaa_25172/measles-cases-are-on-the-rise-b36d058e5466
