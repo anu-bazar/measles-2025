@@ -42,7 +42,7 @@ sns.lineplot(
     hue='NAME',
     linewidth=1.5,
     marker='o',
-    legend=False  # Set to True if you want to show the country legend
+    legend=False  # Set to True if you want but this looks awful
 )
 
 # Reference line
